@@ -1,0 +1,38 @@
+.user-preview {
+    border: 1px solid #adadad;
+    border-radius: 10px;
+    transition: 0.4s;
+    padding: 0 15px;
+    padding: 20px 10px;
+    &:hover {
+        transition: 0.4s;
+        box-shadow: 0 0 5px 1px #a5a0a0;
+    }
+
+    .img-holder {
+        margin-bottom: 10px;
+        img {
+            border-radius: 70px;
+            width: 128px;
+            height: 128px;
+        }
+    }
+    .user-info {
+        margin-bottom: 10px;
+        h1 {
+            text-align: center;
+            font-size: 17px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 14px;
+            color: rgb(78, 78, 78);
+        }
+    }
+    .user-location {
+        margin-bottom: 10px;
+        align-items: center;
+        font-size: 13px;
+        color: rgb(51, 50, 50);
+    }
+}

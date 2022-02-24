@@ -1,0 +1,87 @@
+// Font Sizes
+.fs12 { font-size: rem(12px); }
+.fs14 { font-size: rem(14px); }
+.fs18 { font-size: rem(18px); }
+.fs20 { font-size: rem(20px); }
+.fs24 { font-size: rem(24px); }
+.fs28 { font-size: rem(28px); }
+.fs30 { font-size: rem(30px); }
+
+// flex helpers
+.flex {
+
+    display: flex;
+
+    > *.full {
+        flex: 1;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.justify-between {
+        justify-content: space-between;
+    }
+    &.auto-center {
+        align-items: center;
+        justify-content: center;
+    }
+    &.wrapper {
+        flex-wrap:wrap;
+    }
+    &.row{
+        flex-direction: row;
+    }
+    &.row-reverse{
+        flex-direction: row-reverse;
+    }
+    &.column{
+        flex-direction: column;
+    }
+    &.column-reverse{
+        flex-direction: column-reverse;
+    }
+}
+
+// Media helpers
+
+.square-ratio {
+    @include aspect-ratio(1, 1);
+}
+.video-ratio {
+    @include aspect-ratio(16, 9);
+}
+.portrait-ratio {
+    @include aspect-ratio(9, 16);
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.container{
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+.m-10{
+    margin: 10px;
+}
+
+.pt-100 {
+    padding-top: 120px;
+}
+.p-10 {
+    padding: 10px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+

@@ -1,0 +1,123 @@
+.content {
+  .appHeader-nav-color {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    padding: 10px 0px;
+    transition: 0.4s;
+
+    .appHeader-nav {
+      .logo {
+        // width: 100px;
+        // height: 80px;
+        width: 160px;
+        height: 48px;
+      }
+
+      .btn-holder {
+        @include for-narrow-layout {
+          display: flex;
+        }
+        @include for-normal-layout {
+          display: none;
+        }
+        button {
+          padding: 0px;
+          border: none;
+          font-size: 24px;
+        }
+      }
+
+      .appHeader-nav-links {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.795);
+        margin: 0;
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+        border-left: 1px solid #f1f1f1;
+        padding: 0px;
+        transform: translateX(100%);
+        transition: transform 0.6s;
+
+        li {
+          border-bottom: 1px solid #bbbbbb;
+        }
+        a {
+          text-align: center;
+          padding: 14px 0px;
+
+          font-size: rem(22px);
+          margin-left: 0px;
+          color: black;
+          text-decoration: none;
+          width: 260px;
+          display: block;
+
+          &:hover {
+            color: #010186;
+          }
+          &.active {
+            color: #010186;
+          }
+        }
+
+        @include for-narrow-layout {
+        }
+        @include for-normal-layout {
+          transform: none;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          right: unset;
+          top: unset;
+          position: unset;
+          background-color: unset;
+          height: unset;
+
+          border: none;
+          a {
+            padding: 0px;
+            margin-left: 50px;
+            text-align: unset;
+            width: unset;
+          }
+          li {
+            border: none;
+          }
+        }
+      }
+      .open-nav-links {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.appHeader-screen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.692);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s;
+}
+
+.show-screen {
+  visibility: visible;
+  opacity: 1;
+}
+
+.not-at-top {
+  box-shadow: rgba(171, 171, 171, 0.16) 0px 4px 6px;
+  transition: 0.4s;
+}

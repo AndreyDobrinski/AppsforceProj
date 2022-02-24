@@ -1,0 +1,13 @@
+.app-search-book {
+    margin-bottom: 10px;
+    .input-holder {
+        input {
+            outline: none;
+            background-color: inherit;
+            border: 1px solid grey;
+            width: 300px;
+            padding: 10px 5px;
+            border-radius: 10px;
+        }
+    }
+}

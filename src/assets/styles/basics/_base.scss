@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+}
+
+html {
+  font-family: "montserrat", sans-serif;
+  background-color: white;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+}
+
+// img {
+//     width: 100%;
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+input,
+select {
+    padding: 5px;
+    padding-left: none;
+    border: unset;
+    background: unset;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+li {
+  list-style: none;
+}
+
+
+//////////////////////////////////////////////////////////////////// 
+
+// @include for-narrow-layout {
+// }
+// @include for-normal-layout {
+// }
